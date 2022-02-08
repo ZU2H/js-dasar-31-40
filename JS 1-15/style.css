@@ -1,0 +1,353 @@
+@font-face {
+    font-family: luxury;
+    src: url(Glamore-VGyee.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo img {
+    display: block;
+    width: 28%;
+    margin: auto;
+    
+}
+
+.logo h3 {
+    font-family: luxury;
+    font-size: 23px;
+    color: #2e3f53;
+    text-align: center;
+}
+
+.header {
+    margin: 1%;
+}
+
+.nav-left, .nav-right {
+    background-color: #4a688a;
+}
+
+.nav-left ul,
+.nav-right ul {
+    list-style: none;
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    background: #2e3f53;
+    color: aliceblue;
+}
+
+@media screen and (min-width: 560px) {
+    .header {
+        width: 1100px;
+        margin: auto;
+        display: flex;
+        margin-top: 1%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo,
+    .nav-left ul,
+    .nav-right ul {
+        display: flex;
+    }
+
+    .logo img {
+        display: block;
+        width: 30%;
+        margin: 0;
+        
+    }
+    
+    .logo h3 {
+        font-family: luxury;
+        font-size: 23px;
+        margin: auto 0;
+        padding-left: 1rem;
+        color: #2e3f53;
+    }
+    
+    .nav-left,
+    .nav-right {
+        margin: 0 33px;
+        background: none;
+    }
+
+    .nav-left a,
+    .nav-right a {
+        padding: 15px;
+        color: black;
+    }
+}
+
+/* main */
+
+.main-left img {
+    width: 450px;
+    display: block;
+    margin: 10px auto;
+}
+
+.main-right {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 560px) {
+    .main {
+        width: 1000px;
+        display: flex;
+        margin-top: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .main-left img {
+        width: 65%;
+    }
+
+    .main-right {
+        margin: auto;
+        text-align: left;
+    }
+
+    .main-right h2 {
+        margin-bottom: 10px;
+    }
+}
+
+/* produk */
+
+.display {
+    margin-top: 2%;
+    text-align: center;
+    color: #2e3f53;
+}
+
+.image img {
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+.produk-content {
+    text-align-last: center;
+    margin: 20px;
+}
+
+@media screen and (min-width: 560px) {
+    .produk {
+        width: 1000px;
+        margin: auto;
+        display: flex;
+    }
+
+    .image {
+        width: 100%;
+        height: 150px;
+    }
+
+    .produk-content {
+        height: 300px;
+    }
+
+    .image img {
+        width: 200px;
+    }
+
+    .display {
+        font-size: 30px;
+    }
+}
+
+/* informasi */
+
+.info {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-content {
+    height: 70px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    width: 60px;
+    display: block;
+    margin-right: 10px;
+}
+
+.info-isi h2 {
+    font-size: 15px;
+}
+
+.info-isi p {
+    font-size: 13px;
+}
+
+@media screen and (min-width: 560px) {
+    .info {
+        width: 1000px;
+        margin: auto;
+        justify-content: space-between;
+    }
+}
+
+/* medsos */
+
+.medsos-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.medsos-icon img {
+    width: 40px;
+    margin: 10px;
+}
+
+.medsos-isi {
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.medsos-form {
+    height: 50px;
+    background: #182431;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medsos-form form input {
+    width: 200px;
+    height: 25px;
+    background: rgb(167, 193, 223);
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: -4px;
+}
+
+.medsos-form form input[type="email"] {
+    padding: 10px;
+}
+
+.medsos-form form button {
+    height: 25.3px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: rgb(167, 193, 223);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media screen and (min-width: 560px) {
+    .medsos {
+        width: 1000px;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+/* footer */
+
+footer {
+    margin-bottom: 100px;
+    background: #182431;
+    color: aliceblue;
+    display: flex;
+}
+
+.logo-bank img {
+    width: 70px;
+}
+
+.identitas {
+    flex: 1;
+}
+
+.sitemap h2,
+.identitas h2 {
+    font-size: 15px;
+}
+
+.identitas p {
+    font-size: 13px;
+}
+
+.sitemap {
+    flex: 1;
+}
+
+.sitemap li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.sitemap li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.sitemap a {
+    font-size: 13px;
+}
+
+.payment {
+    flex: 1;
+}
+
+.bank {
+    padding-bottom: 15px;
+}
+
+.bank p {
+    font-size: 10px;
+}
+
+.bank h3 {
+    font-size: 13px;
+}
+
+@media screen and (min-width: 560px) {
+    footer {
+        width: 1000px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .sitemap h2,
+    .identitas h2 {
+        font-size: 20px;
+    }
+
+    .sitemap a {
+        font-size: 15px;
+    }
+
+    .identitas p {
+        font-size: 15px;
+    }
+}
